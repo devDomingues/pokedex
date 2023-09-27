@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon_name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #777, -5px 6.5px 0 #222, -1px 6.5px 0 #222, -4.5px 3px 0 #222 ;
+}
+
+.buttons.l {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+.buttons.r {
+    position: absolute;
+    bottom: 10%;
+    left: 85%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    cursor: pointer;
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #444;
+    box-shadow:-3px 4px 0 #222, -5px 6.5px 0 #000, -1px 6.5px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -3px 4px 0 #222;
+    font-size: 0.9rem;
+    transition: 0.05s;
+}
+.buttons.l:active {
+    bottom: 9%;
+    left: 49%;
+    transition: 0.04s;
+}
+.buttons.r:active {
+    bottom: 9%;
+    left: 84%;
+    transition: 0.04s;
+}
